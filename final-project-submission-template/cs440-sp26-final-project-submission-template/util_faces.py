@@ -11,7 +11,9 @@ Note the training split file is `facedatatrain`, not `facedatatraining`.
 import os
 import numpy as np
 
-FACE_DATADIR = "facedata"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+FACE_DATADIR = os.path.join(SCRIPT_DIR, "data", "facedata")
 FACE_ROWS = 70
 FACE_COLS = 60
 

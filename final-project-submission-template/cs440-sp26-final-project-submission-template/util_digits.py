@@ -11,7 +11,9 @@ Do not parse the raw files by hand.
 import os
 import numpy as np
 
-DIGIT_DATADIR = "digitdata"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DIGIT_DATADIR = os.path.join(SCRIPT_DIR, "data", "digitdata")
 DIGIT_ROWS = 28
 DIGIT_COLS = 28
 
